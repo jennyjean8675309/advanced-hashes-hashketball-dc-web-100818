@@ -122,11 +122,10 @@ def longest_name
   game_hash.each do |location, team_info|
   player = team_info[:players].keys.flatten.max_by { |x| x.length }
   end
-  binding.pry
   player
 end
   
-  
+  binding.pry
 
     
 def long_name_steals_a_ton?
