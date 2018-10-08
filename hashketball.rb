@@ -123,7 +123,6 @@ def longest_name
   team_info[:players].keys.flatten.max_by { |x| x.length }
   end
 end
-  binding.pry
   
 
   
