@@ -119,8 +119,7 @@ def game_hash
 end
 
 def longest_name
-  game_hash.collect do |location, team_info|
-    binding.pry
+  game_hash.select do |location, team_info|
   team_info[:players].keys.flatten.max_by { |x| x.length }
   end
 end
