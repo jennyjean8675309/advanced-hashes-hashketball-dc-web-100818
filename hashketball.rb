@@ -119,7 +119,7 @@ def game_hash
 end
 
 players = game_hash.collect do |location, team_info|
-    team_info[:players].keys.max { |a, b| 
+    team_info[:players].keys.max { |a, b| a.length <=> b.length }
   end.flatten
   
   binding.pry
