@@ -118,7 +118,7 @@ def game_hash
     }
 end
 
-longest_name = game_hash.each do |location, team_info|
+longest_name = game_hash.collect do |location, team_info|
   team_info[:players].keys.max_by { |x| x.length }
   end
   
